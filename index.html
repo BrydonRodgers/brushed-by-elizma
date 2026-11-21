@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brushed by Elizma | Mobile Hairdresser in Langebaan</title>
+<meta name="description" content="Qualified mobile hairdresser in Langebaan. Elizma comes to you for cuts, colour, styling, braids, treatments and event hair. WhatsApp to book.">
+<meta name="theme-color" content="#F6F0E7">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brushed by Elizma | Mobile Hairdresser in Langebaan">
+<meta property="og:description" content="Professional hair care that comes to you. Cuts, colour, styling, braids and more across Langebaan.">
+<meta property="og:image" content="assets/img/hero.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23C98F8A'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23FBF6EE'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="assets/img/hero.webp" type="image/webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HairSalon","name":"Brushed by Elizma","telephone":"+27656713769","description":"Qualified mobile hairdresser serving Langebaan and surrounds.","areaServed":{"@type":"City","name":"Langebaan"},"address":{"@type":"PostalAddress","addressLocality":"Langebaan","addressRegion":"Western Cape","addressCountry":"ZA"},"priceRange":"$$"}
+</script>
+<style>
+:root{
+  --cream:#F6F0E7; --sand:#EBE0D0; --paper:#FBF7F0;
+  --pink:#D4A5A0; --pink-deep:#9A5F5A; --pink-soft:#F0DAD6;
+  --sage:#7E8E70; --sage-deep:#56654A;
+  --ink:#2F2622; --ink-soft:#5E524B;
+  --display:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --text:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --s1:.5rem;--s2:1rem;--s3:1.5rem;--s4:2.5rem;--s5:4rem;--s6:6rem;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--text);font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--cream);padding-bottom:76px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.1;letter-spacing:-.01em}
+h1{font-size:clamp(2.7rem,9vw,5.2rem)}
+h2{font-size:clamp(2rem,5.5vw,3.2rem)}
+h3{font-size:1.4rem}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+.eyebrow{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--sage-deep)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.75rem 1rem;z-index:100}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--sage-deep);outline-offset:3px;border-radius:6px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(246,240,231,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(47,38,34,.08)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:64px}
+.logo{font-family:var(--display);font-size:1.45rem;text-decoration:none;letter-spacing:.01em}
+.logo span{color:var(--pink-deep);font-style:italic}
+nav{display:none;gap:1.75rem}
+nav a{text-decoration:none;font-size:.95rem;color:var(--ink-soft);padding:.5rem 0}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:48px;padding:.75rem 1.5rem;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s ease-out,background-color .2s ease-out}
+.btn-primary{background:var(--pink-deep);color:#fff}
+.btn-primary:hover{background:#85504b}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--cream)}
+.btn:active{transform:scale(.97)}
+.hd-cta{display:none}
+
+/* hero */
+.hero{padding:var(--s4) 0 var(--s5)}
+.hero-grid{display:grid;gap:var(--s4)}
+.hero h1 em{font-style:italic;color:var(--pink-deep)}
+.hero p.lead{font-size:1.2rem;color:var(--ink-soft);max-width:34ch;margin-top:var(--s3)}
+.hero .eyebrow{display:block;margin-bottom:var(--s2)}
+.actions{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s3)}
+.hero-img{position:relative;justify-self:center;width:min(100%,440px)}
+.arch{border-radius:999px 999px var(--r) var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--sand)}
+.arch img{width:100%;height:118%;object-fit:cover;object-position:50% 12%;filter:saturate(.7) sepia(.14)}
+.hero-img::before{content:"";position:absolute;inset:auto -14px -14px auto;width:62%;height:62%;border-radius:var(--r);background:var(--pink-soft);z-index:-1}
+.leaf{position:absolute;left:-18px;top:18%;width:64px;color:var(--sage);opacity:.9}
+
+.strip{background:var(--sage-deep);color:#F3F0E6}
+.strip ul{list-style:none;padding:0;display:grid;gap:.25rem;padding-block:1rem;text-align:center;font-size:.95rem;letter-spacing:.02em}
+.strip li+li::before{content:"";}
+
+/* sections */
+section{padding:var(--s5) 0}
+.head{max-width:36rem;margin-bottom:var(--s4)}
+.head p{color:var(--ink-soft);margin-top:var(--s2)}
+.head .eyebrow{display:block;margin-bottom:var(--s1)}
+
+/* services */
+.svc{list-style:none;padding:0;border-top:1px solid rgba(47,38,34,.18)}
+.svc li{display:grid;gap:.25rem;padding:var(--s3) 0;border-bottom:1px solid rgba(47,38,34,.18)}
+.svc h3{display:flex;align-items:baseline;gap:1rem}
+.svc h3 small{font-family:var(--text);font-size:.8rem;color:var(--pink-deep);letter-spacing:.12em;font-weight:600}
+.svc p{color:var(--ink-soft);max-width:52ch}
+
+.split{display:grid;gap:var(--s4)}
+.photo{border-radius:var(--r);overflow:hidden;background:var(--sand)}
+.photo img{width:100%;height:100%;object-fit:cover}
+
+/* how */
+.how{background:var(--sand)}
+.steps{display:grid;gap:var(--s3);counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;padding-left:4rem;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:-.2rem;font-family:var(--display);font-size:2.6rem;color:var(--pink-deep);line-height:1}
+.steps h3{margin-bottom:.25rem}
+.steps p{color:var(--ink-soft)}
+
+/* about */
+.about blockquote{font-family:var(--display);font-size:clamp(1.4rem,3.5vw,1.9rem);line-height:1.35;margin:var(--s3) 0;color:var(--ink)}
+.about p{color:var(--ink-soft);max-width:52ch}
+.ticks{list-style:none;padding:0;margin-top:var(--s3);display:grid;gap:.5rem}
+.ticks li{padding-left:1.8rem;position:relative}
+.ticks li::before{content:"";position:absolute;left:0;top:.55rem;width:.9rem;height:.5rem;border-left:2.5px solid var(--sage-deep);border-bottom:2.5px solid var(--sage-deep);transform:rotate(-45deg)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:var(--s2)}
+.gal figure{border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;background:var(--sand)}
+.gal figure:nth-child(2){margin-top:var(--s3)}
+.gal img{width:100%;height:100%;object-fit:cover}
+
+/* faq */
+details{border-bottom:1px solid rgba(47,38,34,.18);padding:var(--s2) 0}
+details:first-of-type{border-top:1px solid rgba(47,38,34,.18)}
+summary{cursor:pointer;font-family:var(--display);font-size:1.25rem;list-style:none;display:flex;justify-content:space-between;gap:1rem;min-height:44px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.6rem;color:var(--pink-deep);transition:transform .2s ease-out}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink-soft);padding:.5rem 0 .25rem;max-width:56ch}
+
+/* contact */
+.contact{background:var(--pink-soft)}
+form{display:grid;gap:var(--s2);background:var(--paper);padding:var(--s3);border-radius:var(--r)}
+label{font-weight:600;font-size:.95rem;display:grid;gap:.4rem}
+input,select{font:inherit;min-height:48px;padding:.6rem .9rem;border:1.5px solid rgba(47,38,34,.3);border-radius:12px;background:#fff;color:var(--ink)}
+input:focus,select:focus{outline:3px solid var(--sage);border-color:var(--sage-deep)}
+.note{font-size:.9rem;color:var(--ink-soft)}
+.err{color:#9b2c2c;font-size:.9rem;min-height:1.2em}
+
+footer{padding:var(--s4) 0;font-size:.9rem;color:var(--ink-soft)}
+footer .wrap{display:grid;gap:var(--s1)}
+footer a{color:var(--pink-deep)}
+
+/* sticky mobile bar */
+.dock{position:fixed;inset:auto 0 0 0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:.5rem;padding:.6rem .75rem calc(.6rem + env(safe-area-inset-bottom));background:var(--paper);border-top:1px solid rgba(47,38,34,.12)}
+.dock .btn{min-height:50px}
+.btn-wa{background:var(--sage-deep);color:#fff}
+.btn-wa:hover{background:#46533c}
+
+/* entrance */
+@media (prefers-reduced-motion:no-preference){
+  .rise{opacity:0;transform:translateY(14px);animation:rise .6s ease-out forwards}
+  .rise:nth-child(2){animation-delay:.08s}.rise:nth-child(3){animation-delay:.16s}.rise:nth-child(4){animation-delay:.24s}
+  @keyframes rise{to{opacity:1;transform:none}}
+}
+
+@media (min-width:760px){
+  body{padding-bottom:0}
+  .dock{display:none}
+  nav{display:flex}
+  .hd-cta{display:inline-flex}
+  .hero{padding:var(--s5) 0 var(--s6)}
+  .hero-grid{grid-template-columns:1.1fr .9fr;align-items:center;gap:var(--s5)}
+  .strip ul{grid-template-columns:repeat(3,auto);justify-content:space-between;gap:1rem}
+  .strip li+li::before{content:"·";margin-right:1rem;margin-left:-1rem;opacity:.0}
+  .svc li{grid-template-columns:1fr 1.3fr;gap:var(--s4);align-items:baseline}
+  .split{grid-template-columns:1fr 1fr;align-items:center;gap:var(--s5)}
+  .split.flip .photo{order:2}
+  .steps{grid-template-columns:repeat(3,1fr);gap:var(--s4)}
+  .gal{grid-template-columns:repeat(3,1fr)}
+  .gal figure:nth-child(2){margin-top:var(--s4)}
+  .contact .split{align-items:start}
+  section{padding:var(--s6) 0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Brushed by Elizma, home">Brushed <span>by Elizma</span></a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About Elizma</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-primary hd-cta" href="#book" data-wa="Hi Elizma, I'd like to book a hair appointment.">Book a visit</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow rise">Mobile hairdresser · Langebaan</span>
+      <h1 class="rise">Salon-quality hair, <em>at your door.</em></h1>
+      <p class="lead rise">Qualified hairdresser Elizma brings the chair, the colour and the care to your home in Langebaan.</p>
+      <div class="actions rise">
+        <a class="btn btn-primary" href="#" data-wa="Hi Elizma, I'd like to book a hair appointment.">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.300 2.4 1.500.3.1.5.1.6-.1l.9-1.100c.2-.3.4-.2.700-.1l1.900.9c.3.1.5.2.5.3.1.1.1.6-.1 1.200z"/></svg>
+          WhatsApp Elizma</a>
+        <a class="btn btn-ghost" href="#services">See services</a>
+      </div>
+    </div>
+    <div class="hero-img rise">
+      <svg class="leaf" viewBox="0 0 64 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M52 118C28 96 20 60 30 4"/><path d="M30 24c-12-2-18-10-20-18 12 0 19 6 20 18zM28 50c-14 0-22-6-24-14 13-1 22 4 24 14zM33 40c10-4 18-2 24 4-10 4-19 3-24-4zM31 70c10-2 18 1 22 8-10 3-18 1-22-8zM30 88c-10 1-18-3-22-10 10-2 18 1 22 10z"/></svg>
+      <div class="arch"><img src="assets/img/hero.webp" alt="A hairdresser trimming hair with scissors and a comb" width="1200" height="1802" fetchpriority="high"></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip"><div class="wrap"><ul>
+  <li>Qualified, trained hairdresser</li>
+  <li>She travels to you</li>
+  <li>Langebaan and surrounds</li>
+</ul></div></div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Services</span>
+      <h2>Everything hair, done properly.</h2>
+      <p>If it involves hair, Elizma can do it. Not sure which service you need? Send a message and she will advise.</p>
+    </div>
+    <ul class="svc">
+      <li><h3><small>01</small>Cuts &amp; shaping</h3><p>Women, men and children. A cut that suits your hair type, face and daily routine.</p></li>
+      <li><h3><small>02</small>Colour &amp; highlights</h3><p>Full colour, root touch-ups, highlights and toning, matched to your skin tone and kept in good condition.</p></li>
+      <li><h3><small>03</small>Blow-dry &amp; styling</h3><p>Smooth blow-dries, curls and waves for everyday, work or a night out.</p></li>
+      <li><h3><small>04</small>Braids &amp; protective styles</h3><p>Neat, comfortable styles that last and look after your hair underneath.</p></li>
+      <li><h3><small>05</small>Treatments &amp; repair</h3><p>Deep conditioning and restorative care for dry, damaged or tired hair.</p></li>
+      <li><h3><small>06</small>Weddings &amp; events</h3><p>Bridal, matric dance and event hair, done at home so you can get ready in comfort.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps. No travelling.</h2>
+    </div>
+    <ol class="steps">
+      <li><h3>Message Elizma</h3><p>Tell her what you want done and where you are in Langebaan.</p></li>
+      <li><h3>Pick a time</h3><p>You agree a day and time that suits you, and she confirms the price before she arrives.</p></li>
+      <li><h3>Relax at home</h3><p>She arrives with everything she needs. You sit back and leave with hair you love.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap split">
+    <div class="photo"><img src="assets/img/style.webp" alt="A hand styling long hair with a round brush" width="1200" height="1800" loading="lazy"></div>
+    <div>
+      <span class="eyebrow">About Elizma</span>
+      <h2>Hairdressing is her profession, not a side hustle.</h2>
+      <blockquote>Trained in hairdressing, working one client at a time.</blockquote>
+      <p>Elizma studied hairdressing and works as a professional. Coming to you means unhurried, one-on-one attention in a space where you are comfortable, with no salon queue and no travelling.</p>
+      <ul class="ticks">
+        <li>Formally trained and qualified</li>
+        <li>One client at a time, no rushing</li>
+        <li>Advice that fits your hair, not a trend</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="gal">
+      <figure><img src="assets/img/blow.webp" alt="Woman having her hair blow-dried" width="1200" height="1800" loading="lazy"></figure>
+      <figure><img src="assets/img/braid.webp" alt="Hands braiding hair into neat sections" width="1200" height="1500" loading="lazy"></figure>
+      <figure><img src="assets/img/wave.webp" alt="Long soft waves in blonde hair" width="1200" height="1801" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Good to know</span><h2>Questions, answered.</h2></div>
+    <details><summary>Where does Elizma travel?</summary><p>Langebaan and the surrounding area. Message her your address or suburb and she will confirm.</p></details>
+    <details><summary>How much does it cost?</summary><p>Price depends on the service and your hair. Elizma confirms the full price before she comes, so there are no surprises.</p></details>
+    <details><summary>What do I need to prepare?</summary><p>A comfortable spot with a chair, a mirror if you have one, and a power point nearby. She brings the rest.</p></details>
+    <details><summary>How do I book?</summary><p>Use the form below or tap WhatsApp. Elizma will reply to agree a day and time.</p></details>
+  </div>
+</section>
+
+<section class="contact" id="book">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Book a visit</span>
+      <h2>Ready for a hair day at home?</h2>
+      <p style="margin-top:1rem;color:var(--ink-soft);max-width:36ch">Send your details and Elizma will reply on WhatsApp to agree a time.</p>
+    </div>
+    <form id="form" novalidate>
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>What would you like done?
+        <select name="svc">
+          <option>Cut &amp; shaping</option><option>Colour &amp; highlights</option><option>Blow-dry &amp; styling</option>
+          <option>Braids &amp; protective styles</option><option>Treatment &amp; repair</option><option>Wedding / event hair</option><option>Not sure yet</option>
+        </select>
+      </label>
+      <label>Your area in Langebaan<input name="area" autocomplete="address-level3" required></label>
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn btn-primary" type="submit">Send on WhatsApp</button>
+      <p class="note">This opens WhatsApp with your message ready to send.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong style="font-family:var(--display);font-size:1.2rem;color:var(--ink)">Brushed by Elizma</strong>
+    <span>Mobile hairdresser · Langebaan, Western Cape</span>
+    <span>Photos by <a href="https://unsplash.com/?utm_source=brushed&utm_medium=referral" rel="noopener">Unsplash</a> contributors, placeholders until Elizma's own photos are added.</span>
+    <span>Website by <a href="https://web.laafstyl.org" rel="noopener">LaafWeb</a></span>
+  </div>
+</footer>
+
+<div class="dock">
+  <a class="btn btn-wa" href="#" data-wa="Hi Elizma, I'd like to book a hair appointment.">WhatsApp</a>
+  <a class="btn btn-primary" href="#book">Book a visit</a>
+</div>
+
+<script>
+/* Elizma's WhatsApp number, international format, digits only. Confirmed from her WhatsApp Business profile 2026-11-21. */
+var ELIZMA_WA = "27656713769";
+function wa(t){return "https://wa.me/"+ELIZMA_WA+"?text="+encodeURIComponent(t)}
+document.querySelectorAll("[data-wa]").forEach(function(a){
+  if(a.getAttribute("href")==="#"||a.dataset.wa){a.href=wa(a.dataset.wa);a.target="_blank";a.rel="noopener"}
+});
+document.getElementById("form").addEventListener("submit",function(e){
+  e.preventDefault();
+  var f=e.target,n=f.name.value.trim(),a=f.area.value.trim(),err=document.getElementById("err");
+  if(!n||!a){err.textContent="Please add your name and area so Elizma can plan your visit.";return}
+  err.textContent="";
+  window.open(wa("Hi Elizma, my name is "+n+". I'd like: "+f.svc.value+". I'm in "+a+", Langebaan."),"_blank","noopener");
+});
+</script>
+</body>
+</html>

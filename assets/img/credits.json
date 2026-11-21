@@ -1,0 +1,32 @@
+{
+ "hero": {
+  "user": "\ud83d\udd25John Rodriguez\ud83d\udd25",
+  "url": "https://unsplash.com/@firephotos",
+  "alt": "Hands with long pink nails using scissors and a comb to trim hair"
+ },
+ "style": {
+  "user": "Jenna Oslin",
+  "url": "https://unsplash.com/@jennaoslin",
+  "alt": "A hand using a round brush to style long blonde hair"
+ },
+ "cut": {
+  "user": "Rosalie Gdy",
+  "url": "https://unsplash.com/@rosaliegdy",
+  "alt": "A hairdresser cutting a client's wet hair with scissors and a comb in a salon"
+ },
+ "braid": {
+  "user": "Mohamed B.",
+  "url": "https://unsplash.com/@bangscreative",
+  "alt": "Hands braiding hair into small square sections"
+ },
+ "blow": {
+  "user": "charlesdeluvio",
+  "url": "https://unsplash.com/@charlesdeluvio",
+  "alt": "woman blowdrying hair"
+ },
+ "wave": {
+  "user": "Yovanka Loria Salon",
+  "url": "https://unsplash.com/@yovankaloriasalon",
+  "alt": "A person with long wavy blonde hair seen from behind against a grey wall"
+ }
+}
